@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="media_adapter.css">
+    <title>Aymen Ghodhbani</title>
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+    <link rel="icon" href="assets\LOGO.png" type="image/x-icon">
+  </head>
+<body>
+    <header>
+        <nav class="firstnav">
+        <div class = "aymenlogo">
+        <a id = "logo-link" href = "#" ><img  src = "assets/LOGO.png" alt = "logo" id = "logo"></a>
+        <a id = "logoname" href = "#">AYMEN°</a>
+        </div>
+        <div class = "menu">
+        <ul class = "head">
+            <li ><a href = "#about" class = "items">About</a></li>
+            <li ><a href = "#experience" class = "items">Experience</a></li>
+            <li ><a href = "#projects" class = "items">Projects</a></li>
+            <li ><a href = "#tools" class = "items">Technologies</a></li>
+            <li ><a href = "#contact" class = "items">Contact</a></li>
+        </ul>
+        </div>
+        </nav>
+        <nav class = "hamburgerNav">
+        <div class = " aymenlogo">
+        <a id = "logo-link" href = "#" ><img  src = "assets/LOGO.png" alt = "logo" id = "logo"></a>
+        <a id = "logoname" href = "#">AYMEN°</a>
+        </div>
+        <div class = "hamburger">
+
+            <div class = "hamburgerIcon" onclick="toggleMenu()">
+                <span class = "line"></span>
+                <span class = "line"></span>
+                <span class = "line"></span>
+            </div>
+        </div>
+            <div class = "hamburgerMenu">
+                    <li ><a href = "#about"   onclick="toggleMenu()">About</a></li>
+                    <li ><a href = "#experience"   onclick="toggleMenu()">Experience</a></li>
+                    <li ><a href = "#projects"  onclick="toggleMenu()">Projects</a></li>
+                    <li ><a href = "#tools" onclick="toggleMenu()">Technologies</a></li>
+                    <li ><a href = "#contact" onclick="toggleMenu()">Contact</a></li>
+            </div>
+
+        </nav>
+    </header>
+              <script>
+    window.onload = function () {
+      window.scrollTo(0, 0);
+    };
+document.getElementById('logo-link').onclick = function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+document.getElementById('logoname').onclick = function (e) {
+  e.preventDefault();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+};
+    </script>
+        <section id = "home">
+           <div class = "introRow">
+            <div class = "introText">
+                <h1>Welcome In !</h1>
+                <p>I Am</p>
+                <p class = "name">Aymen Ghodhbani</p>
+                <div class = "field">
+                    <p>Software Developer & Data Enthusiast</p>
+                </div>
+
+            </div>
+            <div id = "introleft">
+              <div class = "photoContainer">
+                  <img src = "assets\MYPHOTO.png" alt = "Aymen's photo" id="photo">
+              </div>
+              <div class = "buttonDiv">
+                <div class = "resume">
+                    <button id = "but" onclick="window.open('/assets/Aymen Ghodhbani.pdf', '_blank')">See Resume</button>
+                </div>
+                <div class = "contactbutton">
+                    <button id = "but">Get Contact</button>
+                </div>
+              </div>
+            </div>
+           </div>
+        </section>
+        <section id = "about">
+            <div id = "message">
+                <h1 class = "greeting">About Me </h1>
+                <p class = "para">I’m currently studying Computer Systems Engineering and IoT at ISSAT Sousse, with a strong passion for both backend and frontend software development.</p><br>
+
+                    <p class = "para">I’m also a data enthusiast with solid skills in data analytics, and I’m actively expanding my knowledge in Artificial Intelligence and Cybersecurity.</p><br>
+
+                    <p class = "para">I enjoy solving real-world problems through technology and take pride in turning ideas into functional, impactful solutions. Always excited to learn and grow.</p><br>
+
+
+                    <p class = "para">I’m ready to contribute my skills, collaborate effectively, and help drive impactful projects forward.</p>
+
+            </div>
+        </section>
+        <section id = "experience">
+            <div id = "message">
+                <h1 class = "greeting">Experience</h1>
+                <p class = "para">I'm currently pursuing a Bachelor's degree in Computer Engineering and the Internet of Things (IoT), with an expected graduation in 2026</p><br>
+                <p class = "para">Alongside my academic journey, I'm actively building a foundation in data science, following a structured career track through DataCamp — soon to be published and shared.</p><br>
+                <p class = "para"> I'm passionate about merging the fields of connected technology and data-driven insights, and I'm continuously expanding my skill set to stay ahead in this fast-evolving tech landscape</p>
+                <p class = "para">More updates on my experiences will be added soon.</p>
+            </div>
+        </section>
+        <section id = "projects">
+            <div id = "message">
+                <h1 class = "greeting">Projects</h1>
+                <div class = "projectPics">
+                <div class = "NetflixDiv">
+                    <a href = "https://github.com/AymenGhodhbani/Netflix-Movie-Analysis" target="_blank" class = "photolink"><img class="NETFLIXPIC" src = "assets/Netflix.jpg" alt = "Netflix Movies Analysis">
+                    <div class = "desc descBottom">NOBEL PRIZE DATA ANALYSIS (PYTHON, PANDAS, SEABORN,
+ DATA VISUALIZATION)</div>
+                    <div class = "desc descTop">Check On Github</div>
+                    </a>
+                </div>
+                <div class = "NYCDiv">
+                    <a href = "https://github.com/AymenGhodhbani/Exploring-NYC-Public-Schools-Test-Results" target="_blank" class = "photolink"><img class="NYCPIC" src = "assets/NewYorkSchool.jpg" alt = "NYC School">
+                    <div class = "desc descBottom">NYC SCHOOLS SAT ANALYSIS (PYTHON, PANDAS, DATA
+ ANALYSIS, STATISTICS)</div>
+                    <div class = "desc descTop">Check On Github</div>
+                    </a>
+                </div>
+                <div class = "NobelDIV">
+                    <a href = "https://github.com/AymenGhodhbani/Analysing-The-Data-Of-Nobel-Price-Winners" target="_blank" class = "photolink"><img class="NOBELPIC" src = "assets/NobelPrizes.jpg" alt = "Your Project">
+                    <div class = "desc descBottom">NOBEL PRIZE DATA ANALYSIS (PYTHON, PANDAS, SEABORN,
+ DATA VISUALIZATION)</div>
+                    <div class = "desc descTop">Check On Github</div>
+                    </a>
+                </div>
+                </div>
+               <div id = "mentiondiv">
+                <br>
+                <br>
+               <p>More Web Dev Projects Will Be Added Soon.</p><br>
+               </div>
+
+            </div>
+        </section>
+        <section id = "tools">
+            <div id = "message">
+                <h1 class = "greeting">Technologies</h1>
+            <div class = "phototools">
+                <div class = "python">
+                    <img src = "assets/python.png" id = "toollogo" alt = "Python">
+                </div>
+                <div class = "js">
+                    <img src = "assets/java-script.png" id = "toollogo" alt = "java-script">
+                </div>
+                <div class = "html">
+                    <img src = "assets/html.png" id="toollogo" alt = "html">
+                </div>
+                <div class="css">
+                    <img src="assets/css-3.png" id="toollogo" alt="css-3">
+                </div>
+                <div class="java">
+                    <img src="assets/java.png" id="toollogo" alt="Java">
+                </div>
+                <div class = "cplus">
+                    <img src = "assets/c++.png" id="toollogo" alt="C++">
+    
+                </div>
+            </div>
+                
+
+                <div class = "mongo">
+                    <img src="assets/mongoDB.png" id = "toollogo" alt = "mongodb">
+                    
+                </div>
+                <div class = "sql">
+                    <img src = "assets/sql.png" id = "toollogo" alt = "SQL">
+                    
+                </div>
+
+                
+            </div>
+        </section>
+
+        <section id = "contact">
+            <div id = "foot">
+            
+        
+             <form class="contact-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                <h2>Leave a Message</h2>
+                <div class = "inputs">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="messagearea" rows="5" placeholder="Your Message" required></textarea>
+                </div>
+                <button type="submit" id = "but">Send</button>
+             </form>
+             
+             
+             <div class = "contactlinks">
+                <h1 id = "lets">LET'S CONNECT</h1>
+                <div class = "connectcol">
+                 <div class = "linkedin">
+                     <a href = "https://www.linkedin.com/in/aymenghodhbani/" target="_blank"><img src="assets/linkedin.png" id = "social" alt="LinkedIn"></a>
+                 </div>
+                 <div class = "github">
+                     <a href = "https://github.com/AymenGhodhbani" target="_blank"><img src="assets/github.png" id = "social" alt="GitHub"></a>
+                 </div>
+                 <div  class="email">
+                     <a href="mailto:aymenghodhbani15@gmail.com" target="_blank"><img src="assets/mail.png" id = "social" alt="Email"></a>
+                 </div>
+                 <div class="facebook">
+                     <a href="https://www.facebook.com/aymen.ghodhbani.9/" target="_blank"><img src="assets/facebook.png" id = "social" alt="Facebook"></a>
+                 </div>
+                 <div class="whatsapp">
+                     <a href="https://wa.me/21695149146" target="_blank"><img src="assets/whatsapp.png" id = "social" alt="WhatsApp"></a>
+                 </div>
+                 </div>
+             </div>
+             
+
+            </div>
+        </section>
+        <footer class="footer">
+                 &copy; 2025 By @Aymen Ghodhbani. All rights reserved. 
+             </footer>
+        <script src="script.js"></script>
+        <script>
+            document.querySelector('.hamburgerIcon').addEventListener('click', function() {
+                this.classList.toggle('open');
+            });
+        </script>
+
+</body>
+</html>
